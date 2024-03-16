@@ -30,10 +30,10 @@ I created a verification environment using uvm. the environment checks a design 
  
 6. Another verification I did is checking my understanding of the architecture. From the data I had, It seemes that I created the both ref models according to the architecture.
 
-7.. waveform: I added to files showing the wave form of two simulations for two tests(test_pd,test_both). The files are: test_pd output, test_both output. 
+7. waveform: I added to files showing the wave form of two simulations for two tests(test_pd,test_both). The files are: test_pd output, test_both output. 
 
 
-* Things I improved and learn from this mission:
+8. Things I improved and learn from this mission:
     1. Good understanding of factory overriding and polymorphism and how its relevant and useful in uvm verifcation environment.
     2. How to check a design with many blocks in one verification environment by using different tests in a comfortable way.
     3. delaying the simulation finish after the sequence items sequencer fifo is empty by using built-in 'phase_ready_to_end' function (raises one more objection after the the last objection is dropped).
