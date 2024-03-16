@@ -28,6 +28,8 @@ The design has 2 main blocks:
  
     * Another verification I did is checking my understanding of the architecture. From the data I had, It seemes that I created the both ref models according to the architecture.
 
+* waveform: I added to files showing the wave form of two simulations for two tests(test_pd,test_both). The files are: test_pd output, test_both output. 
+
 
 * Things I improved and learn from this mission:
     1. Good understanding of factory overriding and polymorphism and how its relevant and useful in uvm verifcation environment.
