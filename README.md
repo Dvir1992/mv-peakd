@@ -20,6 +20,14 @@ The design has 2 main blocks:
 
 * You can watch the file full_env to watch all the blocks (verification and design) together.
 
+* Bugs:
+    1. I found that the movavg_fltr module never outputs the first data correctly. To verify my environment and the movavg_fltr ref model, I checked the inputs of the movavg_fltr module in the waveform and I performed a manual calculation. The result proved that the 
+        movavg_fltr ref model is correct (bugs can be seen in the 'errors in the data_check out of the moving average block' file.
+    2.  I found that part of the peak_info of the peak_detector module is not correct. I did the same process that I did in section 1 and the result proved that the peak_detector ref model is correct. errors can be seen in the 'data_check out of the peak detection block'
+        file.
+ 
+    * Another verification I did is checking my understanding of the architecture. From the data I had, It seemes that I created the both ref models according to the architecture.
+
 
 * Things I improved and learn from this mission:
     1. Good understanding of factory overriding and polymorphism and how its relevant and useful in uvm verifcation environment.
