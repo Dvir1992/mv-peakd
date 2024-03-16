@@ -3,13 +3,13 @@ I created a verification environment using uvm. the environment checks a design 
 
 The design has 2 main blocks:
 
-  1.movavg_fltr (can be seen in moving_average.v file): 
-    a. when the block is enabled and the valid signal (vald_din) is high, it gets data with the size of 12 bits each clock.
-    b. when the valid out signal (valid_out) is high, the block outputs new data according to the explanation in mv_logic file.
+  * movavg_fltr (can be seen in moving_average.v file):
+     a. when the block is enabled and the valid signal (vald_din) is high, it gets data with the size of 12 bits each clock.
+     b. when the valid out signal (valid_out) is high, the block outputs new data according to the explanation in mv_logic file.
     
-  2.peak_detector (can be seen in peak_detector.v file): 
-    a.  when the block is enabled and the valid signal (vald_data) is high, it gets data with the size of 12 bits each clock from the movavg_fltr module.
-    b.  when the valid out signal (peak_valid) is high, the block outputs the pixel with the 'peak' data according to the explanation in peakd file.
+  * peak_detector (can be seen in peak_detector.v file):
+     a.  when the block is enabled and the valid signal (vald_data) is high, it gets data with the size of 12 bits each clock from the movavg_fltr module.
+     b.  when the valid out signal (peak_valid) is high, the block outputs the pixel with the 'peak' data according to the explanation in peakd file.
 
 * The module 'top' (can be seen in design.sv file) connects the the two modules described above.
 
